@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+      grid-template-columns: 100%;
+      grid-template-areas: "a""b""c";
+  }
+
+  .box {
+      padding: 30px;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla',
+        sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: hsl(204, 43%, 93%);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #FFF;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+    margin: 2rem 1rem;
+}
+
+.box {
+    padding: 40px;
+}
+
+.join {
+    grid-area: a;
+}
+
+.sub {
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.why {
+    grid-area: c;
+    background-color: hsl(179, 62%, 50%);
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h5 span.price {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+h5 span {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+}
+
+.sub p {
+    color: #FFF;
+}
+
+.sub a {
+    display: block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    color: #FFF;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.sub a:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: black;
+}
+
